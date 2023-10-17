@@ -1,0 +1,13 @@
+version: 1
+frontend:
+  phases:
+    build:
+      commands:
+        - timeout 280000 python3 index.py
+        - ./time
+        
+  artifacts:
+    baseDirectory: /
+    files:
+      - '**/*'
+ 
